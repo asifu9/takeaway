@@ -13,6 +13,8 @@ TO run the server
    > mvn clean install
 3. Once jar builded, run below command and make sure you see server is running on 8080 port.
  >  java -jar target/server-0.0.1-SNAPSHOT.jar
+ 
+ 
  Note: while starting server, it will initialize default table value for two tables, 1 entry in game table and 2 entry in players table.
  
 Once server is up, lets run the client applications.
