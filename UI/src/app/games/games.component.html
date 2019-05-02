@@ -1,0 +1,5 @@
+<div *ngFor="let game of this.gameService?.games " (click)="startGame(game)">
+  <div class="game-block-style">
+ <span > {{game.name}}  </span>
+  </div>
+</div>

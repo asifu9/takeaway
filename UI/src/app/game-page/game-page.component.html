@@ -1,0 +1,60 @@
+<div class="row game-body">
+  <div *ngIf="gameService.audits?.length==0">{{gameService.update}}</div>
+  <div class="row" *ngFor="let gameValue of gameService.audits; let i = index">
+
+    <div class="row player-head">
+      <div class="col-md-3 player-left" *ngIf="(i+1)%2 != 0">
+
+        <img src="/assets/{{getImage(gameValue.currentPlayerId)}}" class="user-icon-style">
+      </div>
+      <div class="col-md-9" [ngClass]="{'selected-input': (i+1)%2 == 0 }">
+        <button class="rounded-circle button-content">{{gameValue.calculatedNumber}}</button>
+      </div>
+      <div class="col-md-3 player-right" *ngIf="(i+1)%2 == 0">
+        <img src="/assets/{{getImage(gameValue.currentPlayerId)}}" class="user-icon-style">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 player-choice">
+        <input type="text" class="text-box-style" value="{{getCalculatedString(gameValue)}}">
+      </div>
+      <div class="col-md-12 player-choice">
+        <input type="text" class="text-box-style" value="{{gameValue.result}}">
+      </div>
+    </div>
+    <div class="top-hight"></div>
+  </div>
+</div>
+<div *ngIf="!gameService.isGameStarted">
+  <div class="top-hight"></div>
+  <div class="top-hight"></div>
+  <br>
+  <button (click)="startGame()" class="start-button-style"> Start New Game </button>
+</div>
+<div *ngIf="gameService.status=='won'" class="winning-block-style">
+  <img src="/assets/images/won.png" class="winner-img-style">
+</div>
+<div *ngIf="gameService.status=='lost'" class="winning-block-style">
+  <img src="/assets/images/back-groun1.png" class="winner-img-style">
+</div>
+<div *ngIf="gameService.status=='won'">
+  <div class="winner-text-style">
+    You won
+    <div class="new-game-text-style" (click)="startGame()">New Game</div>
+  </div>
+
+</div>
+<div *ngIf="gameService.status=='lost'">
+  <div class="winner-text-style">
+    You Loose
+    <div class="new-game-text-style" (click)="startGame()">New Game </div>
+  </div>
+
+</div>
+<div *ngIf="gameService?.currentData?.calcuationString=='enable'" class="row border-left border-right border-bottom game-footer fix-position">
+  <div class="game-button-group">
+    <button class="rounded-circle button-content" (click)="userAction(-1)">-1</button>
+    <button class="rounded-circle button-content" (click)="userAction(0)">0</button>
+    <button class="rounded-circle button-content" (click)="userAction(1)">+1</button>
+  </div>
+</div>

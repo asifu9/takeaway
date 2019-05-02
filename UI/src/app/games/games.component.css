@@ -1,0 +1,7 @@
+.game-block-style {
+    padding:10px;
+    border-radius: 10px 10px;
+    -moz-box-shadow: 3px 4px 2px #888;
+-webkit-box-shadow: 3px 4px 2px #888;
+box-shadow: 3px 4px 2px #888;
+}

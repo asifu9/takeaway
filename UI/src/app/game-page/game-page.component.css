@@ -1,0 +1,139 @@
+.player-left{
+    padding-left: 40px;
+}
+
+.player-right{
+    padding-left: 50px;
+}
+
+.player-head{
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.player-choice {
+    padding-bottom: 10px;
+    padding-left: 120px
+}
+
+.selected-input {
+    padding-left: 260px;
+}
+
+.game-body{
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.game-footer{
+    padding-top: 20px;
+}
+
+.button-content{
+    background-color: #50AADD;
+    color: #E7F3F1;
+    width:60px;
+    height: 60px;
+}
+
+.game-button-group{
+    padding-left: 100px;
+    padding-bottom: 10px;
+    background-color:  #E7F3F1;
+/*        position: absolute; */
+    width: 100%;
+}
+.fix-position {
+  
+   /*  position: absolute;*/
+  /*  top: 450px;*/
+     /* *ngIf="gameService?.currentData?.calcuationString=='enable'"  */
+}
+
+.text-box-style{
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: groove;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-size: 10px;
+}
+.user-icon-style{
+    width:40px;
+    height: 40px;
+}
+
+.aligh-left{
+    padding-left: 0px;
+}
+.start-button-style{
+      margin:auto;
+  display:block;
+    width:90%;
+    border-radius: 15px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.top-hight{
+    height: 10px;
+}
+.winning-block-style{
+    position: absolute;
+    top: 0px;
+    opacity: 0.9;
+    background-color: #50aadd;
+    height: 100%;
+    width: 100%;
+    margin-left: -15px;
+}
+.winner-text-style{
+    font-family:Roboto-Bold;
+    font-size:41px;
+    color:#ffffff;
+    letter-spacing:0;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -137px;
+    background: #50aadd;
+    width: 100%;
+    height: 30%;
+    margin-left: -15px;
+}
+.winner-block-style{
+    position: absolute;
+    top: 0px;
+    opacity: 0.9;
+    background-color: #50aadd;
+    height: 100%;
+    width: 100%;
+    margin-left: -15px;
+}
+.winner-img-style {
+        width: 50%;
+    margin: auto;
+    top: 150px;
+    position: absolute;
+    left: 90px;
+}
+
+.new-game-text-style {
+    font-family:Roboto-Bold;
+    font-size:20px;
+    letter-spacing:0;
+    text-align:center;
+    background-color: white;
+    color: 50aadd;
+    width: 300px;
+    margin: auto;
+    border-radius: 20px;
+    height: 40px;
+    color:blue;
+    padding-top: 6px;
+    padding-bottom: 10px;
+}
