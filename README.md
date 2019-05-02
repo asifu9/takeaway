@@ -45,6 +45,6 @@ Yup, we are done with client application, now we need to run the UI whihc will b
  
  Open another browser and put use below URL.
  
-  http://localhost:4200/game/bLara/1
+  http://localhost:4300/game/bLara/1
   
   you should see a in both browser option to start the game.
