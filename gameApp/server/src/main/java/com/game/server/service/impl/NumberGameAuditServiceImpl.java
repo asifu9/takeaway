@@ -74,7 +74,7 @@ public class NumberGameAuditServiceImpl implements NumberGameAuditService {
 			}
 		}
 		create(step);
-		return null;
+		return gameUtil.convert(step, AuditDTO.class);
 	}
 
 	void updatePlayer(GamePlayerDTO dto, GameStatus status) throws Exception {
