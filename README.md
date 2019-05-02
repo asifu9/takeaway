@@ -57,8 +57,8 @@ Yup, we are done with client application, now we need to run the UI whihc will b
   URL: http://localhost:8080/core/player/ <br>
   Method: POST <br>
   Payload:  <br>
+      
       {
-       
         "firstName": "john",
         "lastName": "Cena",
         "userName": "jcena",
