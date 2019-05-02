@@ -9,7 +9,8 @@ Enviroment:
 PLease follow bellow steps to run the application.
 TO run the server
 1. Create a database with the name "test" in mysql database.
-2. go to server folder from downloaded files and run maven command to compile and build the the jar "mvn clean install".
+2. go to server folder from downloaded files and run below maven command to compile and build the the jar.
+   > mvn clean install
 3. Once jar builded, run below command and make sure you see server is running on 8080 port.
  >  java -jar target/server-0.0.1-SNAPSHOT.jar
 
