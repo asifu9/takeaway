@@ -44,7 +44,7 @@ public class NumberGameAuditTest {
 	@Test
 	public void createTest() throws Exception {
 		AuditDTO audit = new AuditDTO(5,3,3,"tst",GameStatus.RUNNING,1,2,1,"test",0);
-		NumberGameAudit p = gameUtil.convert(auditService.create( audit),NumberGameAudit.class);
+		AuditDTO p = auditService.create( audit);
 		assertNotNull(p);
 		gameInstanceService.deleteAll();
 		auditService.deleteAll();
