@@ -1,4 +1,4 @@
-# takeaway
+# Takeaway Challenge
 
 Enviroment:
 1. Java 1.8 or more
