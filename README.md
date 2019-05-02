@@ -52,7 +52,7 @@ Yup, we are done with client application, now we need to run the UI whihc will b
   
   you should see a in both browser option to start the game.
   
-  
+
   To add a new Player : <br>
   URL: http://localhost:8080/core/player/ <br>
   Method: POST <br>
