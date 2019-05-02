@@ -54,8 +54,8 @@ Yup, we are done with client application, now we need to run the UI whihc will b
   
   
   To add a new Player :
-  URL: http://localhost:8080/core/player/
-  Method: POST
+  URL: http://localhost:8080/core/player/ <br>
+  Method: POST <br>
   Payload: 
       {
        
@@ -68,7 +68,7 @@ Yup, we are done with client application, now we need to run the UI whihc will b
     }
     
   To add a new Game:
-  URL: http://localhost:8080/core/game/
+  URL: http://localhost:8080/core/game/ <br>
   Method: POST
   Payload:
   
