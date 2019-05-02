@@ -71,8 +71,8 @@ Yup, we are done with client application, now we need to run the UI whihc will b
   URL: http://localhost:8080/core/game/
   Method: POST
   Payload:
-     {
+  
+       {
         "name": "Another Game",
         "gameType": "NUMBER"
-    
-    }
+        }
