@@ -53,10 +53,10 @@ Yup, we are done with client application, now we need to run the UI whihc will b
   you should see a in both browser option to start the game.
   
   
-  To add a new Player :
+  To add a new Player : <br>
   URL: http://localhost:8080/core/player/ <br>
   Method: POST <br>
-  Payload: 
+  Payload:  <br>
       {
        
         "firstName": "john",
@@ -67,10 +67,10 @@ Yup, we are done with client application, now we need to run the UI whihc will b
         "port": 2020
     }
     
-  To add a new Game:
+  To add a new Game: <br>
   URL: http://localhost:8080/core/game/ <br>
-  Method: POST
-  Payload:
+  Method: POST <br>
+  Payload: <br>
   
        {
         "name": "Another Game",
