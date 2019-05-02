@@ -13,7 +13,8 @@ TO run the server
    > mvn clean install
 3. Once jar builded, run below command and make sure you see server is running on 8080 port.
  >  java -jar target/server-0.0.1-SNAPSHOT.jar
-
+ Note: while starting server, it will initialize default table value for two tables, 1 entry in game table and 2 entry in players table.
+ 
 Once server is up, lets run the client applications.
 As we know, its a two player game, we need to run the application twice with the different user and port.
 
@@ -48,3 +49,28 @@ Yup, we are done with client application, now we need to run the UI whihc will b
   http://localhost:4300/game/bLara/1
   
   you should see a in both browser option to start the game.
+  
+  
+  To add a new Player :
+  URL: http://localhost:8080/core/player/
+  Method: POST
+  Payload: 
+      {
+       
+        "firstName": "john",
+        "lastName": "Cena",
+        "userName": "jcena",
+        "profileImagePath": "/images/user1.png",
+        "ipAddress": "localhost",
+        "port": 2020
+    }
+    
+  To add a new Game:
+  URL: http://localhost:8080/core/game/
+  Method: POST
+  Payload:
+     {
+        "name": "Another Game",
+        "gameType": "NUMBER"
+    
+    }
