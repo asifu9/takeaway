@@ -4,7 +4,7 @@ Enviroment:
 1. Java 1.8 or more
 2. Maven
 3. MySQL - any latest version
-4. Node server v11.10.0, NPM 6.7.0 to run Angular 5 Application.
+4. Node server v11.10.0, NPM 6.7.0 to run Angular 5.2 Application.
 
 PLease follow bellow steps to run the application.
 TO run the server
